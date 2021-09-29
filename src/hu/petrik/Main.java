@@ -119,5 +119,9 @@ public class Main {
         }
 
         System.out.println(darabKevesebbMint15 + " olyan bejegyzés van ami 15-nél kevesebb lájkot kapott.");
+
+        //3. d,
+
+
     }
 }
