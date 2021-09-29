@@ -2,6 +2,7 @@ package hu.petrik;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -14,7 +15,19 @@ public class Main {
 	    Bejegyzes b2 = new Bejegyzes("Te", "NEM!");
 	    bejegyzesLista.add(b1);
 	    bejegyzesLista.add(b2);
-        System.out.println(bejegyzesLista.get(0).toString());
-        System.out.println(bejegyzesLista.get(1).toString());
+
+        //2. b,
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Adjon meg egy darabszámot: ");
+        int darab = sc.nextInt();
+        for (int i = 0; i < darab; i++){
+            System.out.print("Adja meg a nevét: ");
+            String nev = sc.next();
+            System.out.print("Tartalom: ");
+            String tartalom = sc.next();
+            bejegyzesLista.add(new Bejegyzes(nev, tartalom));
+        }
+        sc.close();
     }
 }

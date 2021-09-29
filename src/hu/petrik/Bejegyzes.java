@@ -14,7 +14,7 @@ public class Bejegyzes {
         this.tartalom = tartalom;
         this.likeok = 0;
         this.letrejott = LocalDateTime.now();
-        this.szerkesztve = LocalDateTime.now();
+        this.szerkesztve = letrejott;
     }
 
     public void like(){
@@ -49,7 +49,7 @@ public class Bejegyzes {
     @Override
     public String toString() {
         String szerkesztveString = "";
-        if (szerkesztve == letrejott) {
+        if (szerkesztve.toLocalTime() != letrejott.toLocalTime()) {
             szerkesztveString = "Szerkesztve: " + szerkesztve + "\n";
         }
         return szerzo + " - " + likeok + " - " + letrejott + "\n" +
