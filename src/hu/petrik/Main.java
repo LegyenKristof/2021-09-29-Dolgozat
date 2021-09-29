@@ -107,5 +107,17 @@ public class Main {
         else{
             System.out.println("Nincs olyan bejegyzés ami 35-nél több lájkot kapott.");
         }
+
+        //3. c,
+
+        int darabKevesebbMint15 = 0;
+
+        for (int i = 0; i < listaMerete; i++){
+            if (bejegyzesLista.get(i).getLikeok() < 15){
+                darabKevesebbMint15 ++;
+            }
+        }
+
+        System.out.println(darabKevesebbMint15 + " olyan bejegyzés van ami 15-nél kevesebb lájkot kapott.");
     }
 }
