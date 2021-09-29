@@ -92,6 +92,20 @@ public class Main {
 
         //3. b,
 
+        boolean tobbLikeMint35 = false;
 
+        for (int i = 0; i < listaMerete; i++){
+            if (bejegyzesLista.get(i).getLikeok() > 35){
+                tobbLikeMint35 = true;
+                break;
+            }
+        }
+
+        if (tobbLikeMint35){
+            System.out.println("Van olyan bejegyzés ami 35-nél több lájkot kapott.");
+        }
+        else{
+            System.out.println("Nincs olyan bejegyzés ami 35-nél több lájkot kapott.");
+        }
     }
 }
