@@ -77,6 +77,15 @@ public class Main {
             System.out.println(b.toString());
         }
 
+        //3. a,
 
+        int maxLike = bejegyzesLista.get(0).getLikeok();
+        for (int i = 1; i < listaMerete; i++){
+            if (bejegyzesLista.get(i).getLikeok() > maxLike) {
+                maxLike = bejegyzesLista.get(i).getLikeok();
+            }
+        }
+
+        System.out.println("\n\nA legnépszerűbb bejegyzés lájkjainak száma: " + maxLike);
     }
 }
