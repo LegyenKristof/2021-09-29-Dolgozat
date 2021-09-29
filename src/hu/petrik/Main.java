@@ -69,12 +69,14 @@ public class Main {
         sc.close();
 
 
-
+        //2. f,
 
         for (Bejegyzes b: bejegyzesLista
              ) {
             System.out.println("\n");
             System.out.println(b.toString());
         }
+
+
     }
 }
