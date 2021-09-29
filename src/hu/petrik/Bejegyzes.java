@@ -50,9 +50,9 @@ public class Bejegyzes {
     public String toString() {
         String szerkesztveString = "";
         if (szerkesztve.toLocalTime() != letrejott.toLocalTime()) {
-            szerkesztveString = "Szerkesztve: " + szerkesztve + "\n";
+            szerkesztveString = "Szerkesztve: " + szerkesztve.toLocalDate() + " " + szerkesztve.toLocalTime() + "\n";
         }
-        return szerzo + " - " + likeok + " - " + letrejott + "\n" +
+        return szerzo + " - " + likeok + " - " + letrejott.toLocalDate() + " " + letrejott.toLocalTime() +"\n" +
                 szerkesztveString +
                 tartalom;
     }

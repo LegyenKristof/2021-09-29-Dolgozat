@@ -30,7 +30,6 @@ public class Main {
             String tartalom = sc.next();
             bejegyzesLista.add(new Bejegyzes(nev, tartalom));
         }
-        sc.close();
 
         //2. c,
 
@@ -62,8 +61,19 @@ public class Main {
             bejegyzesLista.get(index).like();
         }
 
+        //2. e,
+
+        System.out.print("A 2. bejegyzés módosítása erre: ");
+        String modositas = sc.next();
+        bejegyzesLista.get(1).setTartalom(modositas);
+        sc.close();
+
+
+
+
         for (Bejegyzes b: bejegyzesLista
              ) {
+            System.out.println("\n");
             System.out.println(b.toString());
         }
     }
