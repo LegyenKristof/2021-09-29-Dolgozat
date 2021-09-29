@@ -52,9 +52,19 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        /*for (Bejegyzes b: bejegyzesLista
+        //2. d,
+
+        int listaMerete = bejegyzesLista.size();
+        int hanyszor = 20 * listaMerete;
+
+        for (int i = 0; i < hanyszor; i++){
+            int index = (int) (Math.random() * listaMerete);
+            bejegyzesLista.get(index).like();
+        }
+
+        for (Bejegyzes b: bejegyzesLista
              ) {
             System.out.println(b.toString());
-        }*/
+        }
     }
 }
