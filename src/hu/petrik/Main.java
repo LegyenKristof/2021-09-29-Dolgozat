@@ -52,13 +52,15 @@ public class Main {
         }
 
         //2. d,
+        //remélem jól értelmeztem a feladatot, 2 féle képpen oldottam meg (korábbi commit)
 
         int listaMerete = bejegyzesLista.size();
-        int hanyszor = 20 * listaMerete;
 
-        for (int i = 0; i < hanyszor; i++){
+        for (int i = 0; i < 20; i++){
             int index = (int) (Math.random() * listaMerete);
-            bejegyzesLista.get(index).like();
+            for (int j = 0; j < listaMerete; j++){
+                bejegyzesLista.get(index).like();
+            }
         }
 
         //2. e,
@@ -87,5 +89,9 @@ public class Main {
         }
 
         System.out.println("\n\nA legnépszerűbb bejegyzés lájkjainak száma: " + maxLike);
+
+        //3. b,
+
+
     }
 }
