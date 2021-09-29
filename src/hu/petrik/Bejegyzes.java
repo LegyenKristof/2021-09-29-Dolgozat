@@ -45,4 +45,15 @@ public class Bejegyzes {
     public LocalDateTime getSzerkesztve() {
         return szerkesztve;
     }
+
+    @Override
+    public String toString() {
+        String szerkesztveString = "";
+        if (szerkesztve == letrejott) {
+            szerkesztveString = "Szerkesztve: " + szerkesztve + "\n";
+        }
+        return szerzo + " - " + likeok + " - " + letrejott + "\n" +
+                szerkesztveString +
+                tartalom;
+    }
 }
